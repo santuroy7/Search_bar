@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="nav.css">
+    <!-- <script src="nav.js"></script> -->
+
+</head>
+
+<body>
+    <div class="circle">
+        <div class="icon"></div>
+        <div class="input">
+
+            <input type="text" placeholder="Search" id="search">
+        </div>
+        <span class="close" onclick="document.getElementById('search').value = ''"></span>
+    </div>
+    <script>
+        const icon = document.querySelector('.icon');
+        const circle = document.querySelector('.circle');
+        icon.onclick = function () {
+            circle.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

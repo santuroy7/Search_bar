@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(55, 111, 224);
+}
+.circle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 60px;
+    transition: 0.5%;
+   box-shadow: 0 0 0 5px rgb(34, 97, 223);
+   overflow: hidden;
+}
+.circle.active
+{
+    width: 360px;
+    
+}
+.circle .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+.circle .icon::before
+{
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(17, 82, 213);
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
+}
+.circle .icon::after
+{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    /* border: 2px solid rgb(17, 82, 213); */
+    background:rgb(17, 82, 213) ;
+    /* border-radius: 50%; */
+    transform: translate(6px ,6px)rotate(315deg);
+}
+.circle .input 
+{
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+.circle .input input
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: navajowhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.close
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    /* background: rgb(196, 231, 100); */
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.close::before
+{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: rgb(86, 86, 86);
+    transform: rotate(45deg);
+    margin-left: 7px;
+}
+.close::after
+{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: rgb(86, 86, 86);
+    transform: rotate(315deg);
+    margin-left: 7px;
+}
