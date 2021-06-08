@@ -16,7 +16,7 @@
         <div class="icon"></div>
         <div class="input">
 
-            <input type="text" placeholder="Search" id="search">
+            <input type="text" placeholder="Search" id="search" class="query" value="">
         </div>
         <span class="close" onclick="document.getElementById('search').value = ''"></span>
     </div>
@@ -26,6 +26,16 @@
         icon.onclick = function () {
             circle.classList.toggle('active')
         }
+         let query=document.querySelector('.query');
+        let input=document.querySelector('input');
+        input.addEventListener('keyup',(e) =>{
+            if(e.keyCode === 13){
+                let url='https://www.google.com/search?q='+query.value;
+                window.open(url,'_blank');
+
+
+            }
+        })
     </script>
 </body>
 
