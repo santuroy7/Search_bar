@@ -22,7 +22,9 @@ body
     background: white;
     border-radius: 60px;
     transition: 0.5%;
-   box-shadow: 0 0 0 5px rgb(34, 97, 223);
+/*    box-shadow: 0 0 0 5px rgb(34, 97, 223); */
+       box-shadow: 0 0 0 5px rgb(4, 83, 241);
+
    overflow: hidden;
 }
 .circle.active
