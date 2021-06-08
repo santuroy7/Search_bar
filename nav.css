@@ -10,7 +10,9 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(55, 111, 224);
+/*     background-color: rgb(55, 111, 224); */
+        background: linear-gradient(rgb(1, 112, 152),black);
+
 }
 .circle
 {
